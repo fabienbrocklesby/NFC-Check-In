@@ -1,0 +1,26 @@
+[build]
+bin = "main"
+cmd = "go build -o ./main ./cmd/server"
+include_ext = ["go"]
+exclude_dir = ["vendor", "tmp"]
+exclude_file = []
+recursive = true
+
+[dev]
+bin = "./main"
+delay = 200
+include_ext = ["go"]
+exclude_dir = ["vendor", "tmp"]
+recursive = true
+
+[log]
+color = "auto"
+time = true
+
+[notify]
+notify = false
+color = "auto"
+time = true
+
+[screen]
+clear = true
